@@ -130,6 +130,7 @@ module "eks" {
       desired_capacity = var.desired_node_count
       max_capacity     = var.max_node_count
       min_capacity     = var.min_node_count
+      version          = var.cluster_version
 
       instance_type = var.node_machine_type
       k8s_labels = {
